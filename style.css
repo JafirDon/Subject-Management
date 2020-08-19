@@ -1,0 +1,336 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+/*Header*/
+.header{
+    background-color: cornflowerblue;
+    text-align: center;
+    height: 110px;
+    
+}
+/*Title and Line*/
+#title{
+    color: white;
+    text-transform: uppercase;
+}
+#sub_title{
+    color: white;
+}
+.nav-items ul li{
+    display: inline-block;
+    color: white;
+    padding: 0px 120px;
+    justify-content: space-between;
+}
+.line{
+    background-color: cornflowerblue;
+    width: 180px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+.line2{
+    background-color: #fff;
+    width: 170px;
+    height: 2px;
+    margin-bottom: 10px;
+    
+}
+/* Profile Box*/
+.profile{
+    
+    margin-top: 15px;
+    height: 187px;
+    width: 95%;
+    margin: 50px auto;
+    margin-top: 50px;
+    background: white;
+    border:  0.1em solid cornflowerblue;
+    box-shadow: 10px 9px 5px 1px rgb(165, 167, 165);
+    overflow: hidden;
+}
+.profile:hover{
+    box-shadow: 10px 9px 5px 1px rgba(98,102,98,1);
+}
+.text_1{
+    float: left;
+    text-align: left;
+    margin: 30px;
+    margin-top: 30px;
+    margin-left: 80px;
+    font-family:  'Lucida Sans', Arial, sans-serif;
+}
+#name{
+    font-size: 30px;
+}
+.text_1 p{
+    color: cornflowerblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.text_2 ul{
+    float: right;
+    margin: 30px;
+    margin: 90px;
+}
+.text_2 ul li{
+    color: cornflowerblue;
+}
+
+/*Boxes*/
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container .box{
+    position: relative;
+    background: white;
+    padding: 20px 40px 40px;
+    border:  0.1em solid cornflowerblue;
+    box-shadow: 10px 9px 5px 1px rgb(165, 167, 165);
+    text-align: center;
+    overflow: hidden;
+    
+}
+.container .box:hover{
+    box-shadow: 10px 9px 5px 1px rgba(98,102,98,1);
+}
+.container .box h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: cornflowerblue;
+    z-index: 1;
+    opacity: 0.6;
+}
+.container .box p{
+    color: cornflowerblue;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.container .box h3{
+    margin-top: 30px;
+    
+}
+.container .box h3 a{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid cornflowerblue;
+    width: 220px;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: cornflowerblue;
+    text-align: center;
+    transition: 0.1s;
+}  
+
+.container .box h3 a:hover {
+    color: #FFFFFF;
+    background-color: cornflowerblue;
+}
+
+/*ribbon*/
+.ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px; 
+    text-align: right;
+ }
+ .ribbon span {
+    font-size: 10px;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-align: center;
+    font-weight: bold; line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); /* Needed for Safari */
+    width: 100px; display: block;
+    background: cornflowerblue;
+    background: linear-gradient(rgb(174, 200, 248) 0%, cornflowerblue 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+ }
+
+/*footer*/
+
+.footer{
+    height: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    padding: 70px;
+    
+}
+.links{
+    margin-right: 70px;
+    
+}
+.links h3{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+}
+.links ul{
+    list-style: none;
+}
+.links ul li a{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.links ul li a:hover{
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+.help{
+    margin-left: 30px;
+}
+.help h3{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+}
+.help ul{
+    list-style: none;
+}
+.help ul li a{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.help ul li a:hover{
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+.about{
+    margin-left: 80px;
+}
+.about h3{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+}
+.about p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    font-family: monospace;
+}
+
+
+@media screen and (max-width:700px){
+    .header{
+        height: 240px;
+        width: fit-content;
+    }
+    .profile{
+        width: 80%;
+        height: 300px;
+    }
+    .text_2 ul{
+        margin: 30px;
+        margin-left: 110px;
+        float: left;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    .container .box h3 a {
+        display: block;
+        margin: 0.4em auto;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        height: 125%;
+        width: fit-content;
+    }
+    .about{
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+    .help{
+        margin: 0;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+    .links{
+        margin: 0;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+}
+@media screen and (max-width:450px){
+    .header{
+        height: 252px;
+        width: fit-content;
+    }
+    .footer{
+        height: fit-content;
+    }
+    .footer .about .help .links{
+        width: fit-content;
+    }
+}
+@media screen and (max-width:400px){
+    .header{
+        height: 252px;
+        width: fit-content;
+    }
+    .footer{
+        height: fit-content;
+    }
+    .footer .about .help .links{
+        width: fit-content;
+    }
+}
+@media screen and (max-width:360px){
+    .header{
+        height: 252px;
+        width: fit-content;
+    }
+    .footer{
+        height: fit-content;
+        overflow: hidden;
+        width: fit-content;
+    }
+    .footer .about .help .links{
+        width: fit-content;
+
+    }
+    .profile{
+        width: 100%;
+    }
+}
